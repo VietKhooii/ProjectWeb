@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form SignUP</title>
+</head>
+<body>
+    <div style="height: 100%;" id="SignUpBox">
+        <link rel="stylesheet" href="./formdky.css">
+        <script src="userScript.js"></script>
+        <script>
+            window.onload=function()
+            {
+                // alert("hien thi thanh cong");
+                createAdmin();
+                showUserList();
+                createProduct();
+                
+            }
+            </script>
+        <img style="opacity: 0.4;height: 690px;width: 100%;" src="https://naciholidays.vn/wp-content/uploads/2022/01/shop-quan-ao-dep-va-re-nhat-cho-sinh-vien-o-tp-ho-chi-minh-157658.jpg">
+    
+        <div class="entireBox">
+        <!-- <div class="background">
+            <img width="100%" height="100%" src="https://naciholidays.vn/wp-content/uploads/2022/01/shop-quan-ao-dep-va-re-nhat-cho-sinh-vien-o-tp-ho-chi-minh-157658.jpg">
+        </div> -->
+        
+            <div class="tittle">
+                    WELCOME TO DesT SHOP 
+            </div>
+            <div>
+                <div class="functionList">
+                    <form style="margin-right: 20px;">
+                        <label>Full name</label>
+                        <br>
+                        <input type="text" id="fullName" class="placeholder" placeholder="  Enter your name"/>
+                    </form>
+                    <form style="margin-left: 20px;">
+                        <label>Username</label>
+                        <br>
+                        <input type="text"  id="userName" class="placeholder" placeholder="  Enter your username"/>
+                    </form>  
+                </div>
+
+                <br><br><br>
+                
+                <div class="functionList">
+                    <form>
+                        <label>Email</label>
+                        <br>
+                        <input type="text" id="email" class="placeholder" placeholder="  Enter your Email"/>
+                    </form>
+                    <form style="margin-left: 70px;">
+                        <label>Phone number</label>
+                        <br>
+                        <input type="text" id="phoneNumber" class="placeholder" placeholder="  Enter your phone number"/>
+                    </form>
+                </div>
+                
+                <br><br><br>
+
+                <div class="functionList">
+                    <form>
+                        <label>Password</label>
+                        <br>
+                        <input type="password" id="password" class="placeholder" placeholder="  Enter your password"/>
+                    </form>
+                    <form style="margin-left: 70px;">
+                        <label>Confirm password</label>
+                        <br>
+                        <input type="password" id="confirmPassword" class="placeholder" placeholder="  Confirm your password"/>
+                    </form>  
+                </div>
+        
+                <div class="listGender">
+                    <label>Gender :</label>
+                    <div class="gender">
+                        <input name="form" class="genderFix" type="radio" >Male
+                        <input name="form" class="genderFix" type="radio" >Female
+                        <input name="form" class="genderFix" type="radio" >Private
+                    </div>
+                </div>
+            </div>
+                <br>
+                <br>
+                <div class="bottomFunction">
+                    <div class="cancelButton" onclick="cancelClick()">
+                        Cancel
+                    </div>
+                    <div class="signUpButton" onclick="createnewuser()">
+                        Sign up
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</body>
+</html>

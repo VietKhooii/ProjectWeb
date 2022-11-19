@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.form{
+    display: none;
+    background-color: white;
+    border-radius: 10px ; 
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 4%;
+    position: absolute;
+    top: 0;right:0;left:0;bottom:0;
+    width: 300px;
+    text-align: center;
+    border: solid 2px red;
+}
+
+.x{
+    position: absolute;
+    font-size: 20px;
+    top: 5px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+.x:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.login{
+    
+    margin: 40px;
+    font-size: 30px;
+}
+.username{
+   position: relative;
+   margin-bottom: 40px;
+}
+.username input{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+.password{
+    position: relative;
+   margin-bottom: 40px;
+}
+.password input{
+    width: 80%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+}
+.signUp:hover{
+    cursor: pointer;
+    color: blue;
+}

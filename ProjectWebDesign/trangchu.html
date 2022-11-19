@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="trangchu.css">
+    <script src="SignInUpPopUpScript.js"></script>
+</head>
+<body>
+
+<!-- Home page -->
+    <div id="homePage">
+        <div style="position: fixed;width: 100%;z-index: 10;">
+            <div class="head"> <!--Trợ giúp, hệ thống cửa hàng, ngôn ngữ -->
+                <div class="trogiup"> Trợ giúp   </div> 
+                <div class="htch"> Hệ thống cửa hàng   </div>
+                <div class="ngongu"> Ngôn ngữ </div>
+            </div> 
+            <div class="underhead">
+                <div class="bentrai"> 
+                    <div class="logo">
+                        <a href="C:\Users\VieetKhooii\OneDrive\Tài liệu\htmlVSC\ProjectWebDesign\trangchu.html"><img width="65px" height="65px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxltX_LvYpjmiQfzLGx-UFnTxNKkILd7i4xPOb91c&s"></a>
+                    </div>
+                        <div class="nu"> <b>NỮ</b> </div>
+                        <div class="nam"> <b>NAM</b> </div>
+                        <div class="treem"> <b>TRẺ EM</b> </div>
+                </div>
+               
+                <div class="benphai">
+                    <div class="timkiem">
+                        <input type="text" size="25" style="height: 40px; font-size: 15px;padding-left: 20px; " placeholder="Tìm kiếm theo từ khóa"   >
+                        <img width="20px" height="20px" style="position: relative; 
+                                                            right: 33px;  
+                                                            top: 3px;
+                                                            cursor: pointer;" 
+                                                            src="https://media.istockphoto.com/vectors/magnifying-glass-minimal-style-icon-vector-eps10-vector-id689879454?k=20&m=689879454&s=170667a&w=0&h=1Nplayq30Ftq7kbFKgSqh9_lBbPGuNmmbE2YzxUVt0w=">
+                    </div>  <!--  placeholder để hiển thị từ nhỏ ở dưới -->
+                    <div class="user" onclick="clickToSignIn()">
+                        <img width="30px" height="30px" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png">
+                    </div>
+
+                    <div class="cart" onclick="clickUser()">
+                        <img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/263/263142.png">
+                    </div>
+                    <div class="heart" onclick="clickUser()">
+                        ♡
+                    </div>
+                    <script>
+                    function clickUser(){
+                        alert("You need to login first!")
+                    }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="chuaHinhAnh">
+            <div class="image">
+                <div class="hinhanh">
+                      <img class="pic" src="https://im.uniqlo.com/global-cms/spa/resd6021b6ab6ba008f163ac506fe49eae6fr.jpg">
+
+                      <img class="pic" src="https://im.uniqlo.com/global-cms/spa/resa9d9be63347a4a40aaff35008965e1c6fr.jpg">
+           
+                      <img class="pic" src="https://im.uniqlo.com/global-cms/spa/res350b59cf0958258103334e4bfdc2cfaffr.jpg">
+                      
+                </div>
+                <div class="slide">
+                    <span onclick="slidePicture(-1)" class="left"><</span>
+                    <span onclick="slidePicture(1)" class="right">></span>
+                </div>
+                <script src="trangChuScript.js"></script>
+            </div>
+        </div>
+        <div class="thongbao">
+          <div class="khungtb">
+           <div class="tb"> THÔNG BÁO QUAN TRỌNG </div>
+                 <div class="tb1" style="font-size: 19px;"> <u> <b>-  NGÀY 19/11 CỬA HÀNG FASHION DesT KHAI TRƯƠNG</b> </u> </div>
+                 <div class="tb2" style="font-size: 19px;"> <u> <b>-  CHƯƠNG TRÌNH KHUYẾN MÃI SALEOFF 50%</b> </u>  </div>
+                 <div class="tb3" style="font-size: 19px;"> <u> <b>-  NHẬP PASS "CONGTIEN" ĐỂ ĐƯỢC ƯU ĐÃI 30%/SẢN PHẨM</b> </u> </div>
+          
+          </div> 
+        </div>
+        <div style="margin-top: 90px;">
+           <marquee style="font-size: 100px"; scrollamount="20"  >WELCOME TO DesT SHOP</marquee> <!-- hiệu ứng chữ chạy từ phải qua trái, scrollamount: tốc độ chạy-->
+        </div>
+        <div class="footer">
+          <div class="footerleft">
+               <div class="ttch" style="font-size: 17px; margin-bottom: 15px;"> <b>THÔNG TIN CỬA HÀNG </b> </div> 
+               <div class="social" style=" font-size: 15px; display: flex; margin: 10px;"  > SOCIAL MEDIA 
+                  <div class="icon" style="display: flex; padding-left: 10px;">
+                    <div class="facebook" style="cursor: pointer;"> <img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/174/174848.png"></div> 
+                    <div class="instagram" style="margin:0px 20px; cursor: pointer;"><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/174/174855.png"></div>
+                    <div class="gmail" style="cursor: pointer;"><img width="25px" height="25px" src="https://cdn-icons-png.flaticon.com/512/281/281769.png"></div>
+                  </div>
+               </div>
+               <div class="diachi" style="margin: 10px;"> ĐỊA CHỈ CỬA HÀNG:
+                  <div class="dc1" style="font-size:14px ; margin-bottom: 10px; margin-top: 8px;" > - Cửa hàng 1: 357 Lê Văn Lương-Quận 7-TPHCM </div>
+                  <div class="dc2" style="font-size:14px ; margin-bottom: 10px;"> - Cửa hàng 2: 165 Điện Biên Phủ-Quận 3-TPHCM </div>
+                  <div class="dc3" style="font-size:14px ; margin-bottom: 10px;"> - Cửa hàng 3: 378 Nơ Trang Long-Quận Bình Thạnh-TPHCM </div>
+               </div>
+               <div class="founder" style="margin-top: 20px; padding-left: 10px;"> <b>FOUNDER & C.E.O: </b> Trương Công Tiến  </div>
+          </div>
+          <div class="footercenter">
+              <div class="cskh" style="font-size: 17px; margin-bottom: 15px;"> <b>CHÍNH SÁCH KHÁCH HÀNG</b> </div>
+              <div class="cskh1" style="font-size: 15px; margin-bottom: 15px;padding-left: 10px;cursor: pointer;"> - Chính sách khách hàng thân thiết </div>
+              <div class="cskh2" style="font-size: 15px; margin-bottom: 15px;padding-left: 10px;cursor: pointer;"> - Chính sách đổi & trả hàng </div>
+              <div class="cskh3" style="font-size: 15px; margin-bottom: 15px;padding-left: 10px;cursor: pointer;"> - Chính sách bảo hành </div>
+          </div>
+          <div class="footerright">
+              <div class="banquyen" style="font-size: 17px; margin-bottom: 15px;"> <b>BẢN QUYỀN VÀ DESIGN</b> </div>
+              <div class="banquyen1" style="font-size: 15px; margin-bottom: 15px; color: rgb(60, 43, 97); padding-left: 10px;"> Bản quyền thuộc Founder TCT </div>
+              <div class="banquyen2" style="font-size: 15px; margin-bottom: 15px; color: rgb(60, 43, 97); padding-left: 10px;"> Design by C.E.O </div>
+
+          </div>
+        </div>
+    </div>
+<!-- Sign In -->
+<link rel="stylesheet" href="formlogin.css">
+<div class="form" id="form">
+    <div class="x" onclick="cancelSignIn()">
+        x
+    </div>
+    <div class="login">
+      ĐĂNG NHẬP
+    </div>
+    <div class="username">
+     <input type="text" id="userName" placeholder="  Username">
+    </div>
+    <div class="password">
+     <input type="password" id="passWord"  placeholder="  Password">
+    </div>
+    <button style="margin: 10px; height: 40px; width: 80%;  " onclick="login();">Đăng nhập</button>
+    <div>
+     Bạn chưa có tài khoản? <a class="signUp" onclick="clickToSignUp()">Đăng ký</a>  <!-- <a href=""></a> là thẻ tạo liên kết-->
+    </div>
+ </div>
+
+ <!-- Sign Up -->
+ <div style="height: 100%;" id="entireBox">
+    <link rel="stylesheet" href="./formdky.css">
+    <script src="userScript.js"></script>
+    <script>
+        window.onload=function()
+        {
+            // alert("hien thi thanh cong");
+            createAdmin();
+            showUserList();
+            createProduct();
+            
+        }
+        </script>
+    <img style="opacity: 0.4;height: 690px;width: 100%;max-width: none;" src="https://naciholidays.vn/wp-content/uploads/2022/01/shop-quan-ao-dep-va-re-nhat-cho-sinh-vien-o-tp-ho-chi-minh-157658.jpg">
+
+    <div class="entireBox">
+    <!-- <div class="background">
+        <img width="100%" height="100%" src="https://naciholidays.vn/wp-content/uploads/2022/01/shop-quan-ao-dep-va-re-nhat-cho-sinh-vien-o-tp-ho-chi-minh-157658.jpg">
+    </div> -->
+    
+        <div class="tittle">
+                WELCOME TO DesT SHOP 
+        </div>
+        <div>
+            <div class="functionList">
+                <form>
+                    <label>Full name</label>
+                    <br>
+                    <input type="text" id="fullName" class="placeholder" placeholder="  Enter your name"/>
+                </form>
+                <form style="margin-left: 70px;">
+                    <label>Username</label>
+                    <br>
+                    <input type="text" id="username" class="placeholder" placeholder="  Enter your username"/>
+                </form>  
+            </div>
+
+            <br><br><br>
+            
+            <div class="functionList">
+                <form>
+                    <label>Email</label>
+                    <br>
+                    <input type="text" id="email" class="placeholder" placeholder="  Enter your Email"/>
+                </form>
+                <form style="margin-left: 70px;">
+                    <label>Phone number</label>
+                    <br>
+                    <input type="text" id="phoneNumber" class="placeholder" placeholder="  Enter your phone number"/>
+                </form>
+            </div>
+            
+            <br><br><br>
+
+            <div class="functionList">
+                <form>
+                    <label>Password</label>
+                    <br>
+                    <input type="password" id="password" class="placeholder" placeholder="  Enter your password"/>
+                </form>
+                <form style="margin-left: 70px;">
+                    <label>Confirm password</label>
+                    <br>
+                    <input type="password" id="confirmPassword" class="placeholder" placeholder="  Confirm your password"/>
+                </form>  
+            </div>
+    
+            <div class="listGender">
+                <label>Gender :</label>
+                <div class="gender">
+                    <input name="genderChoose" id="Male" class="genderFix" type="radio" >Male
+                    <input name="genderChoose" id="Female" class="genderFix" type="radio" >Female
+                    <input name="genderChoose" id="Private" class="genderFix" type="radio" >Private
+                </div>
+            </div>
+        </div>
+            <br>
+            <br>
+            <div class="bottomFunction">
+                <div class="cancelButton" onclick="cancelSignUp()">
+                    Cancel
+                </div>
+                <div class="signUpButton" onclick="createnewuser()">
+                    Sign up
+                </div>
+            </div>
+        
+    </div>
+</div>
+</body>
+</html>

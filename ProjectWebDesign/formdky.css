@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#entireBox{
+    display: none;
+}
+.entireBox{
+    height: auto;
+    margin: 0 auto;
+    margin-top: 3%;
+    position: absolute;
+    top: 0;right:0;left:0;bottom:0;
+    width: 100%;
+}
+
+.tittle{
+    color: rgb(67, 39, 3);
+    font-size: 50px;
+    text-align: center;  
+}
+
+.functionList{
+    width: 100%;
+    display: flex;
+    /* border: solid 3px red; */
+    justify-content: center;
+    font-size: 25px;
+}
+/* .functionList>form{
+    color: rgb(78, 6, 6);
+    font-size: 20px;
+    height: 80px;
+    width: 276px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+    border: solid 3px red;
+
+} */
+    
+    .placeholder{
+        border-radius: 12px;
+        line-height: 30px;
+        width: 270px;
+        font-size: 15px;
+    }
+
+    .listGender{
+        font-size: 25px;
+        color: rgb(40, 39, 31);
+        margin-top: 30px;
+        text-align: center;
+    }
+    .gender{
+        font-size: 25px;
+        padding-top: 5px;
+        word-spacing: 20px;
+    }
+    .genderFix{
+        cursor: pointer;
+        margin-right: 10px;
+        transform: scale(1.35);
+    }
+
+.bottomFunction{
+    display: flex;
+    justify-content: center;
+}
+.bottomFunction>div{
+    border: solid 4px rgb(45, 33, 16);
+    border-radius: 30px;
+    color: rgb(73, 51, 22);
+    font-size: 40px;
+    text-align: center;
+    width: 190px;
+}
+    .cancelButton{
+        margin-right: 60px;
+    }
+    .signUpButton{
+        margin-left: 60px;
+    }
+.bottomFunction>div:hover{
+    border: solid 4px gold;
+    color: gold;
+    cursor: pointer;
+}
+
+
