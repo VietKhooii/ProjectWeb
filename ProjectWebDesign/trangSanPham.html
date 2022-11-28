@@ -4,8 +4,72 @@
     <title>San Pham</title>
     <link rel="stylesheet" href="SanPham.css">
     <link rel="stylesheet" href="trangchu.css">
+    <script src="arraySP.js"></script>
 </head>
 <body>
+    <script>
+
+        window.onload = function()
+                    {	
+                        // var url = window.location.href;
+                        taomenuGioiTinh();
+                        
+                        // var tl = url.split('?');
+                        // console.log("tl in san pham : "+tl)
+                        // if (tl[1] > 0){
+                            taoMenuTheLoai();
+                        // }
+                        hienthisptheophanloai();
+                        //layurl1();
+                        // hienthitrangmacdinh();
+                        
+                        // var url = window.location.href;
+                        // hienthimenu();
+                        // //console.log(url[1].length);
+                    
+                        // if(url[1].length<3)
+                        //     hienthisptheophanloai();
+                        //     hienthisanpham_theophanloaicophantrang();
+                        // hienthisotrang();
+                        
+                };
+            
+            
+        
+        // function onclickmenu(obj)
+        // {	
+        //     console.log(obj.id);
+        // }
+        
+        // function hienthimenu()
+        // {
+        //     var url = window.location.href;
+        //     var id = url.split('?');
+        //     //alert(id[0]);
+        //     //alert(id[1]);
+        //     //console.log(id[0])
+        //     //console.log(id[1]);
+        //     switch(id[1])
+        //     {
+        //         case 'tc':
+        //         {	document.getElementById("hienthi").innerHTML='<p style="background-color:blue">Bạn đang chọn trang chủ</p>';
+        //             break;
+        //         }
+        //         case 'gt':
+        //         {	document.getElementById("hienthi").innerHTML="Bạn đang chọn trang giới thiệu";
+        //             break;
+        //         }
+        //         case 'ttts':
+        //         {	document.getElementById("hienthi").innerHTML="Bạn đang chọn trang thông tin tuyển sinh";
+        //             break;
+        //         }
+        //         default:
+        //             //alert ('ban chua cho gi het');
+        //     }
+            
+        // }			
+        </script>
+
     <div>
         <div style="position: fixed;width: 100%;z-index: 10;">
             <div class="head"> <!--Trợ giúp, hệ thống cửa hàng, ngôn ngữ -->
@@ -19,9 +83,7 @@
                     <div class="logo">
                         <a href="C:\Users\VieetKhooii\OneDrive\Tài liệu\htmlVSC\ProjectWebDesign\UserPage.html"><img width="65px" height="65px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxltX_LvYpjmiQfzLGx-UFnTxNKkILd7i4xPOb91c&s"></a>
                     </div>
-                        <div class="nu" onclick="nu()"> <b>NỮ</b> </div>
-                        <div class="nam" onclick="nam()"> <b>NAM</b> </div>
-                        <div class="treem" onclick="emBe()"> <b>TRẺ EM</b> </div>
+                        <div class="gioiTinh" id="noiDungGioiTinh"></div>
                 </div>
             
                 <div class="benphai">
@@ -45,18 +107,20 @@
                     </div>
                 </div>
             </div>
-            <div id="nam" class="topic">
+            <div id="menuTheLoai"></div>
+            <!-- <div id="nam" class="topic">
                 <h3 style="font-size: 30px;margin-top: -3px;"><b>Nam</b></h3>
-                <div>Áo</div>
-                <div>Quần</div>
-                <div>Áo Khoác</div>
-                <div>Nón</div>
+                <div id="namAo">Áo</div>
+                <div id="namQuan">Quần</div>
+                <div id="namAoKhoac">Áo Khoác</div>
+                <div id="namNon">Nón</div>
             </div>
             <div id="nu" class="topic">
                 <h3 style="font-size: 30px;margin-top: -3px;"><b>Nữ</b></h3>
-                <div>Áo</div>
-                <div>Quần</div>
-                <div>Váy</div>
+                <div id="">Áo</div>
+                <div id="">Quần</div>
+                <div id="">Váy</div>
+                <div id="">Váy</div>
             </div>
             <div id="emBe" class="topic">
                 <h3 style="font-size: 30px;margin-top: -3px;"><b>Trẻ em</b></h3>
@@ -64,7 +128,7 @@
                 <div>Quần</div>
                 <div>Đầm</div>
                 <div>Áo khoác</div>
-            </div>
+            </div> -->
         </div>
     <br>
     <br>
@@ -76,35 +140,11 @@
     <br>
     <br>
     <br>
-        <div class="theloai">
+        <!-- <div class="theloai">
             Thể loại
-        </div>
-        <div class="sanpham">
-            <div class="dòng" style="display: flex;">
-            <div class="sp">hé</div>
-            <div class="sp">lô</div>
-            <div class="sp">hé</div>
-            <div class="sp">sờ lili</div>
-            </div>
-            <div class="dòng" style="display: flex;">
-            <div class="sp">hé</div>
-            <div class="sp">lô</div>
-            <div class="sp">hé</div>
-            <div class="sp">sờ lili</div>
-            </div>
-            <div class="dòng" style="display: flex;">
-            <div class="sp">hé</div>
-            <div class="sp">lô</div>
-            <div class="sp">hé</div>
-            <div class="sp">sờ lili</div>
-            </div>
-            <div class="dòng" style="display: flex;">
-            <div class="sp">hé</div>
-            <div class="sp">lô</div>
-            <div class="sp">hé</div>
-            <div class="sp">sờ lili</div>
-            </div>
-        </div>
+        </div> -->
+        <div id="sanPham" style="display: flex;border: solid 2px black;"></div>
+        <!-- <div class="heartSP">♡</div> -->
     </div>
 </body>
 </html>
